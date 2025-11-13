@@ -6,61 +6,65 @@
     <meta name="description" content="The You Lab: An 8-week AI-powered college essay program combining science-backed self-discovery with expert coaching. Help students write authentic essays that stand out.">
     <meta name="keywords" content="college essay coaching, authentic college essays, AI essay writing program, personalized college application help, college essay bootcamp, premium essay coaching">
     <title>The You Lab - Your Story. Your Voice. Your Future.</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-primary text-gray-900">
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <div class="logo">The You Lab</div>
-                <div class="nav-links">
-                    <a href="#how-it-works">How It Works</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#faq">FAQ</a>
-                    <a href="#cta" class="btn-nav">Reach Out</a>
+    <nav class="navbar sticky top-0 z-[1000] bg-white shadow-custom-sm border-b border-gray-200">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="nav-content flex justify-between items-center py-4">
+                <div class="logo font-display text-2xl md:text-3xl font-bold text-primary">The You Lab</div>
+                <div class="nav-links hidden md:flex items-center gap-6 lg:gap-8">
+                    <a href="#how-it-works" class="text-gray-900 font-medium hover:text-primary transition-colors duration-150">How It Works</a>
+                    <a href="#pricing" class="text-gray-900 font-medium hover:text-primary transition-colors duration-150">Pricing</a>
+                    <a href="#faq" class="text-gray-900 font-medium hover:text-primary transition-colors duration-150">FAQ</a>
+                    <a href="#cta" class="btn-nav inline-block px-6 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-all duration-300">Reach Out</a>
                 </div>
-                <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <button class="mobile-menu-toggle md:hidden flex flex-col gap-1.5 p-2 bg-none border-none cursor-pointer" aria-label="Toggle menu">
+                    <span class="w-6 h-0.5 bg-gray-900 transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-gray-900 transition-all duration-300"></span>
+                    <span class="w-6 h-0.5 bg-gray-900 transition-all duration-300"></span>
                 </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Your Story.<br>Your Voice.<br>Your Future.</h1>
-                    <p class="hero-subhead">An 8-week program that combines AI-powered self-discovery with expert coaching and peer support to help students write authentic, compelling college essays that admissions officers actually remember.</p>
-                    <div class="hero-cta">
-                        <a href="#cta" class="btn-primary">Schedule Discovery Call</a>
-                        <p class="trust-indicator">Limited to 8 students per cohort</p>
+    <section class="hero bg-gradient-to-br from-gray-50 to-indigo-100 py-12 md:py-16 lg:py-20">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="hero-content grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                <div class="hero-text order-2 lg:order-1 text-center lg:text-left">
+                    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+                        Your Story.<br>Your Voice.<br>Your Future.
+                    </h1>
+                    <p class="hero-subhead text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+                        An 8-week program that combines AI-powered self-discovery with expert coaching and peer support to help students write authentic, compelling college essays that admissions officers actually remember.
+                    </p>
+                    <div class="hero-cta flex flex-col items-center lg:items-start gap-4">
+                        <a href="#cta" class="btn-primary inline-block px-8 py-3.5 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg shadow-custom-md hover:translate-y-[-2px] hover:shadow-custom-lg transition-all duration-300 text-center w-full sm:w-auto max-w-xs">
+                            Schedule Discovery Call
+                        </a>
+                        <p class="trust-indicator text-sm text-gray-600 italic">Limited to 8 students per cohort</p>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="slideshow-container">
-                        <div class="slide fade">
-                            <img src="images/harvard.png" alt="Student celebrating Harvard acceptance">
+                <div class="hero-visual order-1 lg:order-2 flex justify-center lg:justify-end items-start">
+                    <div class="slideshow-container w-full max-w-md lg:max-w-lg h-80 sm:h-96 md:h-[500px] relative rounded-2xl overflow-hidden shadow-custom-xl">
+                        <div class="slide fade h-full">
+                            <img src="images/harvard.png" alt="Student celebrating Harvard acceptance" class="w-full h-full object-cover object-center">
                         </div>
-                        <div class="slide fade">
-                            <img src="images/yale1.png" alt="Student celebrating Yale acceptance">
+                        <div class="slide fade h-full">
+                            <img src="images/yale1.png" alt="Student celebrating Yale acceptance" class="w-full h-full object-cover object-center">
                         </div>
-                        <div class="slide fade">
-                            <img src="images/yale2.png" alt="Student with Yale acceptance">
+                        <div class="slide fade h-full">
+                            <img src="images/yale2.png" alt="Student with Yale acceptance" class="w-full h-full object-cover object-center">
                         </div>
-                        
+
                         <!-- Navigation dots -->
-                        <div class="slideshow-dots">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
+                        <div class="slideshow-dots absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-3 z-10">
+                            <span class="dot w-3 h-3 rounded-full bg-white/50 cursor-pointer transition-all duration-300 border-2 border-white/80 hover:bg-white hover:scale-110" onclick="currentSlide(1)"></span>
+                            <span class="dot w-3 h-3 rounded-full bg-white/50 cursor-pointer transition-all duration-300 border-2 border-white/80 hover:bg-white hover:scale-110" onclick="currentSlide(2)"></span>
+                            <span class="dot w-3 h-3 rounded-full bg-white/50 cursor-pointer transition-all duration-300 border-2 border-white/80 hover:bg-white hover:scale-110" onclick="currentSlide(3)"></span>
                         </div>
                     </div>
                 </div>
@@ -69,11 +73,11 @@
     </section>
 
     <!-- Solution Section -->
-    <section class="solution-section">
-        <div class="container">
-            <div class="solution-grid">
-                <div class="solution-pillar">
-                    <div class="pillar-icon">
+    <section class="solution-section py-12 md:py-16 lg:py-20 bg-gray-50">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="solution-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-8">
+                <div class="solution-pillar bg-white p-6 lg:p-8 rounded-xl shadow-custom-md hover:translate-y-[-5px] hover:shadow-custom-xl transition-all duration-300">
+                    <div class="pillar-icon w-12 h-12 mb-4">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="32" cy="32" r="30" stroke="#6366F1" stroke-width="2"/>
                             <path d="M32 12 L32 52 M12 32 L52 32" stroke="#6366F1" stroke-width="2"/>
@@ -83,15 +87,21 @@
                             <circle cx="42" cy="32" r="4" fill="#10B981"/>
                         </svg>
                     </div>
-                    <h3>Science-Backed Personalization</h3>
-                    <ul>
-                        <li>Starts with validated personality assessments (Gallup StrengthsFinder)</li>
-                        <li>AI develops deep understanding of each student's unique voice</li>
-                        <li>Creates psychological profile that informs every interaction</li>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Science-Backed Personalization</h3>
+                    <ul class="list-none p-0 space-y-2.5">
+                        <li class="pl-6 relative text-gray-600 text-sm md:text-base before:content-['→'] before:absolute before:left-0 before:text-primary before:font-bold">
+                            Starts with validated personality assessments (Gallup StrengthsFinder)
+                        </li>
+                        <li class="pl-6 relative text-gray-600 text-sm md:text-base before:content-['→'] before:absolute before:left-0 before:text-primary before:font-bold">
+                            AI develops deep understanding of each student's unique voice
+                        </li>
+                        <li class="pl-6 relative text-gray-600 text-sm md:text-base before:content-['→'] before:absolute before:left-0 before:text-primary before:font-bold">
+                            Creates psychological profile that informs every interaction
+                        </li>
                     </ul>
                 </div>
-                <div class="solution-pillar">
-                    <div class="pillar-icon">
+                <div class="solution-pillar bg-white p-6 lg:p-8 rounded-xl shadow-custom-md hover:translate-y-[-5px] hover:shadow-custom-xl transition-all duration-300">
+                    <div class="pillar-icon w-12 h-12 mb-4">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10 54 L32 10 L54 54 Z" stroke="#6366F1" stroke-width="2" fill="none"/>
                             <circle cx="32" cy="20" r="3" fill="#6366F1"/>
@@ -100,15 +110,21 @@
                             <path d="M32 20 L25 35 M32 20 L39 35" stroke="#6366F1" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3>Structured Self-Discovery</h3>
-                    <ul>
-                        <li>Proprietary "journey" curriculum with expert-crafted prompts</li>
-                        <li>AI guides students through meaningful introspection</li>
-                        <li>Students discover their stories rather than being told what to write</li>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Structured Self-Discovery</h3>
+                    <ul class="list-none p-0 space-y-2.5">
+                        <li class="pl-6 relative text-gray-600 text-sm md:text-base before:content-['→'] before:absolute before:left-0 before:text-primary before:font-bold">
+                            Proprietary "journey" curriculum with expert-crafted prompts
+                        </li>
+                        <li class="pl-6 relative text-gray-600 text-sm md:text-base before:content-['→'] before:absolute before:left-0 before:text-primary before:font-bold">
+                            AI guides students through meaningful introspection
+                        </li>
+                        <li class="pl-6 relative text-gray-600 text-sm md:text-base before:content-['→'] before:absolute before:left-0 before:text-primary before:font-bold">
+                            Students discover their stories rather than being told what to write
+                        </li>
                     </ul>
                 </div>
-                <div class="solution-pillar">
-                    <div class="pillar-icon">
+                <div class="solution-pillar bg-white p-6 lg:p-8 rounded-xl shadow-custom-md hover:translate-y-[-5px] hover:shadow-custom-xl transition-all duration-300">
+                    <div class="pillar-icon w-12 h-12 mb-4">
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="32" cy="24" r="8" stroke="#6366F1" stroke-width="2"/>
                             <path d="M32 32 L32 44" stroke="#6366F1" stroke-width="2"/>
@@ -118,76 +134,101 @@
                             <path d="M32 44 L20 50 M32 44 L44 50" stroke="#6366F1" stroke-width="2"/>
                         </svg>
                     </div>
-                    <h3>Expert Human Guidance</h3>
-                    <ul>
-                        <li>Small cohort (8 students) with dedicated essay coach</li>
-                        <li>Weekly group sessions for feedback and accountability</li>
-                        <li>Students learn from peers while maintaining individual voice</li>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4">Expert Human Guidance</h3>
+                    <ul class="list-none p-0 space-y-2.5">
+                        <li class="pl-6 relative text-gray-600 text-sm md:text-base before:content-['→'] before:absolute before:left-0 before:text-primary before:font-bold">
+                            Small cohort (8 students) with dedicated essay coach
+                        </li>
+                        <li class="pl-6 relative text-gray-600 text-sm md:text-base before:content-['→'] before:absolute before:left-0 before:text-primary before:font-bold">
+                            Weekly group sessions for feedback and accountability
+                        </li>
+                        <li class="pl-6 relative text-gray-600 text-sm md:text-base before:content-['→'] before:absolute before:left-0 before:text-primary before:font-bold">
+                            Students learn from peers while maintaining individual voice
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="solution-quote">
-                <p>"Admissions officers can spot consultant-written essays from a mile away. What they can't ignore is genuine authenticity."</p>
-                <p class="quote-attribution">— Gina Lanette, UCLA</p>
+            <div class="solution-quote bg-gray-200 p-8 md:p-10 rounded-xl border-l-4 border-primary mt-12">
+                <p class="text-xl md:text-2xl italic text-gray-900 text-center leading-relaxed mb-0">
+                    "Admissions officers can spot consultant-written essays from a mile away. What they can't ignore is genuine authenticity."
+                </p>
+                <p class="quote-attribution text-base text-gray-600 mt-4 font-semibold text-right">— Gina Lanette, UCLA</p>
             </div>
         </div>
     </section>
 
     <!-- Team Bio Section -->
-    <section class="team-section">
-        <div class="container">
-            <h2>Meet The Team</h2>
-            <div class="team-grid">
-                <div class="team-card">
+    <section class="team-section py-12 md:py-16 lg:py-20 bg-white">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">Meet The Team</h2>
+            <div class="team-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Team Member 1: Amelie -->
+                <div class="team-card h-auto min-h-[400px] lg:h-[650px] cursor-pointer">
                     <div class="team-card-inner">
-                        <div class="team-card-front">
-                            <div class="team-photo">
-                                <img src="images/Amelie.jpeg" alt="Amelie Martin">
+                        <div class="team-card-front flex flex-col items-center justify-start p-6 lg:p-10 bg-gray-50 rounded-xl shadow-custom-md">
+                            <div class="team-photo w-32 h-32 lg:w-36 lg:h-36 mb-6 rounded-full overflow-hidden border-4 border-primary shadow-custom-md flex-shrink-0">
+                                <img src="images/Amelie.jpeg" alt="Amelie Martin" class="w-full h-full object-cover object-center">
                             </div>
-                            <h3>Amelie Martin</h3>
-                            <p class="team-school">University of Chicago</p>
-                            <p class="team-bio">Amelie brings deep expertise in youth development and educational equity. As an analyst at BlackRock and former outreach director for WYSE, she understands both the business of education and the human side of mentorship. A passionate writer with a background in economics and gender studies, she ensures The You Lab balances rigor with authentic student voice.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Amelie Martin</h3>
+                            <p class="team-school text-sm md:text-base text-primary font-semibold mb-5">University of Chicago</p>
+                            <p class="team-bio text-sm md:text-base text-gray-600 leading-relaxed text-left flex-grow">
+                                Amelie brings deep expertise in youth development and educational equity. As an analyst at BlackRock and former outreach director for WYSE, she understands both the business of education and the human side of mentorship. A passionate writer with a background in economics and gender studies, she ensures The You Lab balances rigor with authentic student voice.
+                            </p>
                         </div>
-                        <div class="team-card-back">
-                            <h4>Writing Sample</h4>
-                            <div class="writing-sample">
-                                <p>"The most powerful essays don't announce their themes—they reveal them through specific moments. When a student writes 'I learned the importance of perseverance,' I ask them to show me the exact moment their hands trembled, the specific words that changed everything. That's where authentic voice lives: in the details only they could know."</p>
+                        <div class="team-card-back flex flex-col justify-center p-6 lg:p-12 bg-gradient-to-br from-primary to-secondary text-white rounded-xl shadow-custom-md">
+                            <h4 class="text-xl md:text-2xl font-display font-bold mb-6">Writing Sample</h4>
+                            <div class="writing-sample flex items-center flex-grow">
+                                <p class="text-sm md:text-base italic leading-relaxed">
+                                    "The most powerful essays don't announce their themes—they reveal them through specific moments. When a student writes 'I learned the importance of perseverance,' I ask them to show me the exact moment their hands trembled, the specific words that changed everything. That's where authentic voice lives: in the details only they could know."
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="team-card">
+
+                <!-- Team Member 2: Ariav -->
+                <div class="team-card h-auto min-h-[400px] lg:h-[650px] cursor-pointer">
                     <div class="team-card-inner">
-                        <div class="team-card-front">
-                            <div class="team-photo">
-                                <img src="images/ariav.jpg" alt="Ariav Asulin">
+                        <div class="team-card-front flex flex-col items-center justify-start p-6 lg:p-10 bg-gray-50 rounded-xl shadow-custom-md">
+                            <div class="team-photo w-32 h-32 lg:w-36 lg:h-36 mb-6 rounded-full overflow-hidden border-4 border-primary shadow-custom-md flex-shrink-0">
+                                <img src="images/ariav.jpg" alt="Ariav Asulin" class="w-full h-full object-cover object-center">
                             </div>
-                            <h3>Ariav Asulin</h3>
-                            <p class="team-school">UC Berkeley</p>
-                            <p class="team-bio">Ariav is the technical architect behind The You Lab's AI platform and a passionate essay and admissions coach. A proud transfer student from Laney College, he understands firsthand the college application journey. As Technical Product Lead at Rescope, he's built systems that enhance rather than replace the writing process—because at heart, he's a writer who loves helping students find their stories.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Ariav Asulin</h3>
+                            <p class="team-school text-sm md:text-base text-primary font-semibold mb-5">UC Berkeley</p>
+                            <p class="team-bio text-sm md:text-base text-gray-600 leading-relaxed text-left flex-grow">
+                                Ariav is the technical architect behind The You Lab's AI platform and a passionate essay and admissions coach. A proud transfer student from Laney College, he understands firsthand the college application journey. As Technical Product Lead at Rescope, he's built systems that enhance rather than replace the writing process—because at heart, he's a writer who loves helping students find their stories.
+                            </p>
                         </div>
-                        <div class="team-card-back">
-                            <h4>Writing Sample</h4>
-                            <div class="writing-sample">
-                                <p>"I used to think good writing meant using big words and complex sentences. Then I transferred from community college and realized: the best essays sound like you're talking to a friend who really gets you. Technology should help you find that voice, not create a new one. That's why I built our AI to ask questions, not write answers."</p>
+                        <div class="team-card-back flex flex-col justify-center p-6 lg:p-12 bg-gradient-to-br from-primary to-secondary text-white rounded-xl shadow-custom-md">
+                            <h4 class="text-xl md:text-2xl font-display font-bold mb-6">Writing Sample</h4>
+                            <div class="writing-sample flex items-center flex-grow">
+                                <p class="text-sm md:text-base italic leading-relaxed">
+                                    "I used to think good writing meant using big words and complex sentences. Then I transferred from community college and realized: the best essays sound like you're talking to a friend who really gets you. Technology should help you find that voice, not create a new one. That's why I built our AI to ask questions, not write answers."
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="team-card">
+
+                <!-- Team Member 3: Genee -->
+                <div class="team-card h-auto min-h-[400px] lg:h-[650px] cursor-pointer">
                     <div class="team-card-inner">
-                        <div class="team-card-front">
-                            <div class="team-photo">
-                                <img src="images/genee.jpeg" alt="Genee Ramsay">
+                        <div class="team-card-front flex flex-col items-center justify-start p-6 lg:p-10 bg-gray-50 rounded-xl shadow-custom-md">
+                            <div class="team-photo w-32 h-32 lg:w-36 lg:h-36 mb-6 rounded-full overflow-hidden border-4 border-primary shadow-custom-md flex-shrink-0">
+                                <img src="images/genee.jpeg" alt="Genee Ramsay" class="w-full h-full object-cover object-center">
                             </div>
-                            <h3>Genee Ramsay, MFT</h3>
-                            <p class="team-school">San Francisco State University</p>
-                            <p class="team-bio">Genee is a licensed marriage and family therapist and self-proclaimed AI skeptic who brings decades of experience helping people discover their authentic voices through writing. Her psychology-first approach keeps The You Lab grounded—ensuring technology serves genuine self-reflection, not shortcuts. Above all, she's a passionate advocate for the power of storytelling to transform lives.</p>
+                            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Genee Ramsay, MFT</h3>
+                            <p class="team-school text-sm md:text-base text-primary font-semibold mb-5">San Francisco State University</p>
+                            <p class="team-bio text-sm md:text-base text-gray-600 leading-relaxed text-left flex-grow">
+                                Genee is a licensed marriage and family therapist and self-proclaimed AI skeptic who brings decades of experience helping people discover their authentic voices through writing. Her psychology-first approach keeps The You Lab grounded—ensuring technology serves genuine self-reflection, not shortcuts. Above all, she's a passionate advocate for the power of storytelling to transform lives.
+                            </p>
                         </div>
-                        <div class="team-card-back">
-                            <h4>Writing Sample</h4>
-                            <div class="writing-sample">
-                                <p>"In thirty years of therapy, I've learned that people don't need someone to tell them who they are—they need someone to help them remember. Writing is the same. The story is already inside each student; our job is simply to create space for it to emerge. That's not something AI can do alone, but it's something AI can help us do better."</p>
+                        <div class="team-card-back flex flex-col justify-center p-6 lg:p-12 bg-gradient-to-br from-primary to-secondary text-white rounded-xl shadow-custom-md">
+                            <h4 class="text-xl md:text-2xl font-display font-bold mb-6">Writing Sample</h4>
+                            <div class="writing-sample flex items-center flex-grow">
+                                <p class="text-sm md:text-base italic leading-relaxed">
+                                    "In thirty years of therapy, I've learned that people don't need someone to tell them who they are—they need someone to help them remember. Writing is the same. The story is already inside each student; our job is simply to create space for it to emerge. That's not something AI can do alone, but it's something AI can help us do better."
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -197,66 +238,94 @@
     </section>
 
     <!-- How It Works Section -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <h2 class="how-it-works-title">8 Weeks. 3 Components. Transformational Results.</h2>
+    <section class="how-it-works py-12 md:py-16 lg:py-20 bg-white" id="how-it-works">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="how-it-works-title font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16 break-words lg:whitespace-nowrap">
+                8 Weeks. 3 Components. Transformational Results.
+            </h2>
 
             <!-- Week-by-Week Timeline -->
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">1-2</div>
+            <div class="timeline flex flex-col lg:flex-row justify-between items-start my-8 lg:my-16 relative gap-8 lg:gap-8">
+                <div class="timeline-item flex-1 text-center lg:text-center relative z-10">
+                    <div class="timeline-marker w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center mx-auto mb-4 font-bold text-lg shadow-custom-md">
+                        1-2
+                    </div>
                     <div class="timeline-content">
-                        <h3>Foundation</h3>
-                        <p>Personality assessment, voice discovery, core narrative</p>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Foundation</h3>
+                        <p class="text-gray-600 text-sm md:text-base">Personality assessment, voice discovery, core narrative</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">3-5</div>
+                <div class="timeline-item flex-1 text-center lg:text-center relative z-10">
+                    <div class="timeline-marker w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center mx-auto mb-4 font-bold text-lg shadow-custom-md">
+                        3-5
+                    </div>
                     <div class="timeline-content">
-                        <h3>Development</h3>
-                        <p>Drafting, peer feedback, refinement</p>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Development</h3>
+                        <p class="text-gray-600 text-sm md:text-base">Drafting, peer feedback, refinement</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">6-8</div>
+                <div class="timeline-item flex-1 text-center lg:text-center relative z-10">
+                    <div class="timeline-marker w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary text-white flex items-center justify-center mx-auto mb-4 font-bold text-lg shadow-custom-md">
+                        6-8
+                    </div>
                     <div class="timeline-content">
-                        <h3>Polish</h3>
-                        <p>Final essays, supplementals, cohesive package</p>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Polish</h3>
+                        <p class="text-gray-600 text-sm md:text-base">Final essays, supplementals, cohesive package</p>
                     </div>
                 </div>
             </div>
 
             <!-- Three Components -->
-            <div class="components-grid">
-                <div class="component-card">
-                    <div class="component-number">1</div>
-                    <h3>Independent AI Work</h3>
-                    <p class="component-time">~1-2 hours/week</p>
-                    <ul>
-                        <li>Guided self-exploration sessions</li>
-                        <li>Hyper-personalized prompts based on your profile</li>
-                        <li>Draft development with real-time AI feedback</li>
+            <div class="components-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12 lg:mt-16">
+                <div class="component-card bg-gray-50 p-8 md:p-10 rounded-xl border-2 border-gray-200 hover:border-primary transition-colors duration-300">
+                    <div class="component-number w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-2xl mb-6">1</div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Independent AI Work</h3>
+                    <p class="component-time text-sm text-gray-400 italic mb-4">~1-2 hours/week</p>
+                    <ul class="list-none p-0 space-y-3">
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            Guided self-exploration sessions
+                        </li>
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            Hyper-personalized prompts based on your profile
+                        </li>
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            Draft development with real-time AI feedback
+                        </li>
                     </ul>
                 </div>
-                <div class="component-card">
-                    <div class="component-number">2</div>
-                    <h3>Group Coaching Sessions</h3>
-                    <p class="component-time">90 mins/week</p>
-                    <ul>
-                        <li>Share progress with cohort of 8 peers</li>
-                        <li>Get expert feedback from experienced essay coach</li>
-                        <li>Learn from others' stories and approaches</li>
+                <div class="component-card bg-gray-50 p-8 md:p-10 rounded-xl border-2 border-gray-200 hover:border-primary transition-colors duration-300">
+                    <div class="component-number w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-2xl mb-6">2</div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Group Coaching Sessions</h3>
+                    <p class="component-time text-sm text-gray-400 italic mb-4">90 mins/week</p>
+                    <ul class="list-none p-0 space-y-3">
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            Share progress with cohort of 8 peers
+                        </li>
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            Get expert feedback from experienced essay coach
+                        </li>
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            Learn from others' stories and approaches
+                        </li>
                     </ul>
                 </div>
-                <div class="component-card">
-                    <div class="component-number">3</div>
-                    <h3>Resources & Support</h3>
-                    <p class="component-time">24/7 access</p>
-                    <ul>
-                        <li>AI writing companion always available</li>
-                        <li>Private cohort community</li>
-                        <li>Essay templates and frameworks</li>
-                        <li>Optional 1-on-1 coaching add-on</li>
+                <div class="component-card bg-gray-50 p-8 md:p-10 rounded-xl border-2 border-gray-200 hover:border-primary transition-colors duration-300">
+                    <div class="component-number w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-2xl mb-6">3</div>
+                    <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">Resources & Support</h3>
+                    <p class="component-time text-sm text-gray-400 italic mb-4">24/7 access</p>
+                    <ul class="list-none p-0 space-y-3">
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            AI writing companion always available
+                        </li>
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            Private cohort community
+                        </li>
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            Essay templates and frameworks
+                        </li>
+                        <li class="pl-6 relative text-gray-600 before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold">
+                            Optional 1-on-1 coaching add-on
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -264,28 +333,50 @@
     </section>
 
     <!-- What You Get Section -->
-    <section class="what-you-get">
-        <div class="container">
-            <h2>More Than Essays.<br>A Portfolio of Self-Knowledge.</h2>
-            <div class="deliverables-grid">
+    <section class="what-you-get py-12 md:py-16 lg:py-20 bg-gradient-to-br from-purple-100 to-blue-100">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">
+                More Than Essays.<br>A Portfolio of Self-Knowledge.
+            </h2>
+            <div class="deliverables-grid grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
                 <div class="deliverables-column">
-                    <h3>Deliverables</h3>
-                    <ul class="checkmark-list">
-                        <li>Complete Common App personal statement (650 words)</li>
-                        <li>3-5 supplemental essays (school-dependent)</li>
-                        <li>Cohesive narrative framework across all materials</li>
-                        <li>Comprehensive personality insights report</li>
-                        <li>Writing toolkit for future applications (scholarships, etc.)</li>
-                        <li>Peer network for ongoing support</li>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Deliverables</h3>
+                    <ul class="checkmark-list list-none p-0 space-y-4">
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold before:text-xl">
+                            Complete Common App personal statement (650 words)
+                        </li>
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold before:text-xl">
+                            3-5 supplemental essays (school-dependent)
+                        </li>
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold before:text-xl">
+                            Cohesive narrative framework across all materials
+                        </li>
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold before:text-xl">
+                            Comprehensive personality insights report
+                        </li>
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold before:text-xl">
+                            Writing toolkit for future applications (scholarships, etc.)
+                        </li>
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['✓'] before:absolute before:left-0 before:text-success before:font-bold before:text-xl">
+                            Peer network for ongoing support
+                        </li>
                     </ul>
                 </div>
                 <div class="deliverables-column">
-                    <h3>Intangible Outcomes</h3>
-                    <ul class="outcome-list">
-                        <li>Authentic self-understanding</li>
-                        <li>Confidence in their own voice</li>
-                        <li>Skills that extend beyond college apps</li>
-                        <li>Stories they're proud to tell</li>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Intangible Outcomes</h3>
+                    <ul class="outcome-list list-none p-0 space-y-4">
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['◆'] before:absolute before:left-0 before:text-secondary">
+                            Authentic self-understanding
+                        </li>
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['◆'] before:absolute before:left-0 before:text-secondary">
+                            Confidence in their own voice
+                        </li>
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['◆'] before:absolute before:left-0 before:text-secondary">
+                            Skills that extend beyond college apps
+                        </li>
+                        <li class="pl-8 relative text-gray-600 text-base md:text-lg before:content-['◆'] before:absolute before:left-0 before:text-secondary">
+                            Stories they're proud to tell
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -293,85 +384,104 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="pricing-section" id="pricing">
-        <div class="container">
-            <h2>Investment Options</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Most Popular</div>
-                    <h3>Core Program</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">2,495</span>
+    <section class="pricing-section py-12 md:py-16 lg:py-20 bg-white" id="pricing">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">Investment Options</h2>
+            <div class="pricing-grid grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto mb-12">
+                <div class="pricing-card featured bg-white border-3 border-primary rounded-xl p-8 md:p-10 relative hover:translate-y-[-5px] hover:shadow-custom-xl transition-all duration-300 shadow-custom-lg">
+                    <div class="pricing-badge absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary to-secondary text-white px-6 py-2 rounded-full text-sm font-semibold">
+                        Most Popular
                     </div>
-                    <ul class="pricing-features">
-                        <li>8-week cohort experience</li>
-                        <li>All components included</li>
-                        <li>Limited to 8 students per cohort</li>
-                        <li>Next cohort starts: <strong>January 2026</strong></li>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6">Core Program</h3>
+                    <div class="price text-center mb-8">
+                        <span class="currency text-2xl text-gray-600 align-super">$</span>
+                        <span class="amount font-display text-6xl font-bold text-gray-900">2,495</span>
+                    </div>
+                    <ul class="pricing-features list-none p-0 mb-8 space-y-3">
+                        <li class="py-3 border-b border-gray-200 text-gray-600">8-week cohort experience</li>
+                        <li class="py-3 border-b border-gray-200 text-gray-600">All components included</li>
+                        <li class="py-3 border-b border-gray-200 text-gray-600">Limited to 8 students per cohort</li>
+                        <li class="py-3 text-gray-600">Next cohort starts: <strong class="text-gray-900">January 2026</strong></li>
                     </ul>
-                    <a href="#cta" class="btn-primary">Schedule Consultation</a>
+                    <a href="#cta" class="btn-primary block w-full px-8 py-3.5 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg shadow-custom-md hover:translate-y-[-2px] hover:shadow-custom-lg transition-all duration-300 text-center">
+                        Schedule Consultation
+                    </a>
                 </div>
-                <div class="pricing-card">
-                    <h3>Private Coaching</h3>
-                    <div class="price">
-                        <span class="currency">$</span>
-                        <span class="amount">200</span>
-                        <span class="period">/hour</span>
+                <div class="pricing-card bg-white border-2 border-gray-200 rounded-xl p-8 md:p-10 relative hover:translate-y-[-5px] hover:shadow-custom-xl transition-all duration-300">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6">Private Coaching</h3>
+                    <div class="price text-center mb-8">
+                        <span class="currency text-2xl text-gray-600 align-super">$</span>
+                        <span class="amount font-display text-6xl font-bold text-gray-900">200</span>
+                        <span class="period text-xl text-gray-600">/hour</span>
                     </div>
-                    <ul class="pricing-features">
-                        <li>Additional 1-on-1 time</li>
-                        <li>Work directly with your group coach</li>
-                        <li>Perfect for supplemental essays</li>
-                        <li>Book as needed throughout program</li>
+                    <ul class="pricing-features list-none p-0 mb-8 space-y-3">
+                        <li class="py-3 border-b border-gray-200 text-gray-600">Additional 1-on-1 time</li>
+                        <li class="py-3 border-b border-gray-200 text-gray-600">Work directly with your group coach</li>
+                        <li class="py-3 border-b border-gray-200 text-gray-600">Perfect for supplemental essays</li>
+                        <li class="py-3 text-gray-600">Book as needed throughout program</li>
                     </ul>
-                    <a href="#cta" class="btn-secondary">Learn More</a>
+                    <a href="#cta" class="btn-secondary block w-full px-8 py-3.5 bg-transparent text-primary border-2 border-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-300 text-center">
+                        Learn More
+                    </a>
                 </div>
             </div>
-            <div class="value-comparison">
-                <p><strong>Value comparison:</strong> Traditional 1-on-1 essay consultants: $3,500-8,000. Generic group programs: $800-1,500. <span class="highlight">The You Lab: Premium personalization at group program efficiency.</span></p>
+            <div class="value-comparison text-center p-6 md:p-8 bg-gray-50 rounded-xl max-w-4xl mx-auto">
+                <p class="text-base md:text-lg text-gray-600 mb-0">
+                    <strong class="text-gray-900">Value comparison:</strong> Traditional 1-on-1 essay consultants: $3,500-8,000. Generic group programs: $800-1,500.
+                    <span class="highlight text-primary font-semibold">The You Lab: Premium personalization at group program efficiency.</span>
+                </p>
             </div>
         </div>
     </section>
 
     <!-- Trust Section -->
-    <section class="trust-section">
-        <div class="container">
-            <h2 class="trust-title">Built by Essay Experts. Powered by Cutting-Edge AI.</h2>
-            <div class="trust-content">
-                <div class="founder-section">
-                    <div class="founder-card">
-                        <div class="founder-avatar">
+    <section class="trust-section py-12 md:py-16 lg:py-20 bg-gray-50">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="trust-title font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16 break-words lg:whitespace-nowrap">
+                Built by Essay Experts. Powered by Cutting-Edge AI.
+            </h2>
+            <div class="trust-content max-w-5xl mx-auto">
+                <div class="founder-section mb-12">
+                    <div class="founder-card flex flex-col md:flex-row items-center gap-6 md:gap-8 bg-white p-6 md:p-8 rounded-xl shadow-custom-md">
+                        <div class="founder-avatar flex-shrink-0 w-20 h-20 md:w-24 md:h-24">
                             <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="50" cy="50" r="48" fill="#6366F1"/>
                                 <circle cx="50" cy="40" r="15" fill="white"/>
                                 <path d="M25 85 Q50 65 75 85" fill="white"/>
                             </svg>
                         </div>
-                        <div class="founder-info">
-                            <h4>Expert-Designed Methodology</h4>
-                            <p>Our curriculum combines proven essay coaching techniques with breakthrough AI personalization, developed by experienced college admissions experts.</p>
+                        <div class="founder-info text-center md:text-left">
+                            <h4 class="text-xl md:text-2xl font-bold text-gray-900 mb-3">Expert-Designed Methodology</h4>
+                            <p class="text-base md:text-lg text-gray-600 mb-0">
+                                Our curriculum combines proven essay coaching techniques with breakthrough AI personalization, developed by experienced college admissions experts.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-section">
-                    <div class="testimonial-card">
-                        <div class="quote-mark">"</div>
-                        <p class="testimonial-text">The program helped my son find his authentic voice. His essays went from generic to genuinely compelling. More importantly, he grew as a person through the self-discovery process.</p>
-                        <p class="testimonial-author">— Parent of admitted student</p>
+                <div class="testimonial-section mb-12">
+                    <div class="testimonial-card bg-white p-8 md:p-10 rounded-xl shadow-custom-md relative">
+                        <div class="quote-mark text-6xl text-primary-light opacity-30 absolute top-4 left-6 font-serif">"</div>
+                        <p class="testimonial-text text-lg md:text-xl italic text-gray-900 mb-4 pl-8">
+                            The program helped my son find his authentic voice. His essays went from generic to genuinely compelling. More importantly, he grew as a person through the self-discovery process.
+                        </p>
+                        <p class="testimonial-author text-right text-gray-600 font-semibold mb-0">— Parent of admitted student</p>
                     </div>
                 </div>
                 <div class="sample-essay">
-                    <h4>Before & After</h4>
-                    <div class="essay-comparison">
-                        <div class="essay-before">
-                            <span class="label">Before</span>
-                            <p>"I have always been passionate about helping others. Throughout my life, I have volunteered at many organizations and learned valuable lessons about leadership..."</p>
+                    <h4 class="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-8">Before & After</h4>
+                    <div class="essay-comparison grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-4 md:gap-6 items-center bg-white p-6 md:p-8 rounded-xl shadow-custom-md">
+                        <div class="essay-before p-4 md:p-6 rounded-lg bg-red-50 border-l-4 border-red-500">
+                            <span class="label block font-bold text-xs uppercase mb-3 text-gray-900">Before</span>
+                            <p class="text-sm md:text-base leading-relaxed text-gray-900 mb-0">
+                                "I have always been passionate about helping others. Throughout my life, I have volunteered at many organizations and learned valuable lessons about leadership..."
+                            </p>
                         </div>
-                        <div class="arrow">→</div>
-                        <div class="essay-after">
-                            <span class="label">After</span>
-                            <p>"The woman's hands shook as I helped her fill out the asylum application. I didn't have a translator, so I drew pictures. That's when I realized communication isn't about perfect words..."</p>
+                        <div class="arrow text-3xl md:text-4xl text-primary font-bold text-center md:rotate-0 rotate-90">→</div>
+                        <div class="essay-after p-4 md:p-6 rounded-lg bg-green-50 border-l-4 border-success">
+                            <span class="label block font-bold text-xs uppercase mb-3 text-gray-900">After</span>
+                            <p class="text-sm md:text-base leading-relaxed text-gray-900 mb-0">
+                                "The woman's hands shook as I helped her fill out the asylum application. I didn't have a translator, so I drew pictures. That's when I realized communication isn't about perfect words..."
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -380,80 +490,96 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section" id="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <button class="faq-question">
+    <section class="faq-section py-12 md:py-16 lg:py-20 bg-white" id="faq">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 text-center mb-12 lg:mb-16">Frequently Asked Questions</h2>
+            <div class="faq-grid max-w-4xl mx-auto">
+                <div class="faq-item border-b border-gray-200 py-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-none border-none p-0 cursor-pointer text-left text-lg md:text-xl font-semibold text-gray-900 hover:text-primary transition-colors duration-150">
                         <span>Is this just AI writing my child's essays?</span>
-                        <span class="faq-toggle">+</span>
+                        <span class="faq-toggle text-3xl text-primary transition-transform duration-300 flex-shrink-0 ml-4">+</span>
                     </button>
-                    <div class="faq-answer">
-                        <p>Absolutely not. The AI is a tool for self-discovery, not a ghostwriter. Students do all the writing themselves. The AI asks personalized questions, helps students reflect on their experiences, and provides feedback on their drafts. The student drives the entire process.</p>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 mb-0 text-gray-600 text-base md:text-lg">
+                            Absolutely not. The AI is a tool for self-discovery, not a ghostwriter. Students do all the writing themselves. The AI asks personalized questions, helps students reflect on their experiences, and provides feedback on their drafts. The student drives the entire process.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
+                <div class="faq-item border-b border-gray-200 py-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-none border-none p-0 cursor-pointer text-left text-lg md:text-xl font-semibold text-gray-900 hover:text-primary transition-colors duration-150">
                         <span>How is this different from ChatGPT?</span>
-                        <span class="faq-toggle">+</span>
+                        <span class="faq-toggle text-3xl text-primary transition-transform duration-300 flex-shrink-0 ml-4">+</span>
                     </button>
-                    <div class="faq-answer">
-                        <p>ChatGPT is a general-purpose tool. Our AI is specifically trained on our proprietary curriculum, understands each student's personality profile, and follows a structured 8-week journey designed by essay experts. Plus, students get human coaching and peer feedback that ChatGPT can't provide.</p>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 mb-0 text-gray-600 text-base md:text-lg">
+                            ChatGPT is a general-purpose tool. Our AI is specifically trained on our proprietary curriculum, understands each student's personality profile, and follows a structured 8-week journey designed by essay experts. Plus, students get human coaching and peer feedback that ChatGPT can't provide.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
+                <div class="faq-item border-b border-gray-200 py-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-none border-none p-0 cursor-pointer text-left text-lg md:text-xl font-semibold text-gray-900 hover:text-primary transition-colors duration-150">
                         <span>What if my student needs more help?</span>
-                        <span class="faq-toggle">+</span>
+                        <span class="faq-toggle text-3xl text-primary transition-transform duration-300 flex-shrink-0 ml-4">+</span>
                     </button>
-                    <div class="faq-answer">
-                        <p>We offer 1-on-1 coaching sessions at $200/hour that can be booked as needed throughout the program. Students can work directly with their group coach for additional support on specific essays or challenges.</p>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 mb-0 text-gray-600 text-base md:text-lg">
+                            We offer 1-on-1 coaching sessions at $200/hour that can be booked as needed throughout the program. Students can work directly with their group coach for additional support on specific essays or challenges.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
+                <div class="faq-item border-b border-gray-200 py-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-none border-none p-0 cursor-pointer text-left text-lg md:text-xl font-semibold text-gray-900 hover:text-primary transition-colors duration-150">
                         <span>When should we start?</span>
-                        <span class="faq-toggle">+</span>
+                        <span class="faq-toggle text-3xl text-primary transition-transform duration-300 flex-shrink-0 ml-4">+</span>
                     </button>
-                    <div class="faq-answer">
-                        <p>The ideal time is junior spring or senior summer. This gives students enough time to complete the program before application deadlines while the college process is fresh in their minds.</p>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 mb-0 text-gray-600 text-base md:text-lg">
+                            The ideal time is junior spring or senior summer. This gives students enough time to complete the program before application deadlines while the college process is fresh in their minds.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
+                <div class="faq-item border-b border-gray-200 py-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-none border-none p-0 cursor-pointer text-left text-lg md:text-xl font-semibold text-gray-900 hover:text-primary transition-colors duration-150">
                         <span>What personality test do you use?</span>
-                        <span class="faq-toggle">+</span>
+                        <span class="faq-toggle text-3xl text-primary transition-transform duration-300 flex-shrink-0 ml-4">+</span>
                     </button>
-                    <div class="faq-answer">
-                        <p>We use Gallup StrengthsFinder as our primary assessment, supplemented with proprietary components we've developed specifically for college essay writing. This combination gives us a comprehensive understanding of each student's unique voice and perspective.</p>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 mb-0 text-gray-600 text-base md:text-lg">
+                            We use Gallup StrengthsFinder as our primary assessment, supplemented with proprietary components we've developed specifically for college essay writing. This combination gives us a comprehensive understanding of each student's unique voice and perspective.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
+                <div class="faq-item border-b border-gray-200 py-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-none border-none p-0 cursor-pointer text-left text-lg md:text-xl font-semibold text-gray-900 hover:text-primary transition-colors duration-150">
                         <span>How small are cohorts?</span>
-                        <span class="faq-toggle">+</span>
+                        <span class="faq-toggle text-3xl text-primary transition-transform duration-300 flex-shrink-0 ml-4">+</span>
                     </button>
-                    <div class="faq-answer">
-                        <p>Maximum 8 students per cohort. This ensures everyone gets meaningful individual attention during group sessions while benefiting from diverse peer perspectives.</p>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 mb-0 text-gray-600 text-base md:text-lg">
+                            Maximum 8 students per cohort. This ensures everyone gets meaningful individual attention during group sessions while benefiting from diverse peer perspectives.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
+                <div class="faq-item border-b border-gray-200 py-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-none border-none p-0 cursor-pointer text-left text-lg md:text-xl font-semibold text-gray-900 hover:text-primary transition-colors duration-150">
                         <span>Can parents attend sessions?</span>
-                        <span class="faq-toggle">+</span>
+                        <span class="faq-toggle text-3xl text-primary transition-transform duration-300 flex-shrink-0 ml-4">+</span>
                     </button>
-                    <div class="faq-answer">
-                        <p>No - this is your student's journey. The cohort sessions are student-only to create a safe space for authentic sharing. However, we provide regular updates to parents on progress and milestones.</p>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 mb-0 text-gray-600 text-base md:text-lg">
+                            No - this is your student's journey. The cohort sessions are student-only to create a safe space for authentic sharing. However, we provide regular updates to parents on progress and milestones.
+                        </p>
                     </div>
                 </div>
-                <div class="faq-item">
-                    <button class="faq-question">
+                <div class="faq-item py-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-none border-none p-0 cursor-pointer text-left text-lg md:text-xl font-semibold text-gray-900 hover:text-primary transition-colors duration-150">
                         <span>What if my student misses a session?</span>
-                        <span class="faq-toggle">+</span>
+                        <span class="faq-toggle text-3xl text-primary transition-transform duration-300 flex-shrink-0 ml-4">+</span>
                     </button>
-                    <div class="faq-answer">
-                        <p>All sessions are recorded and available within 24 hours. We also offer make-up options for students who need to miss sessions due to conflicts or emergencies.</p>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 mb-0 text-gray-600 text-base md:text-lg">
+                            All sessions are recorded and available within 24 hours. We also offer make-up options for students who need to miss sessions due to conflicts or emergencies.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -461,39 +587,47 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section class="final-cta" id="cta">
-        <div class="container">
+    <section class="final-cta py-12 md:py-16 lg:py-20 bg-gradient-to-br from-primary to-secondary text-center" id="cta">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="cta-content">
-                <h2>Your Student Has Stories Worth Telling.<br>Let's Help Them Tell It.</h2>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn-primary btn-large">Start Your Journey</a>
-                    <a href="#download" class="btn-secondary btn-large">Download Free Guide</a>
+                <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8">
+                    Your Student Has Stories Worth Telling.<br>Let's Help Them Tell It.
+                </h2>
+                <div class="cta-buttons flex flex-col sm:flex-row justify-center gap-4 mb-6 flex-wrap">
+                    <a href="#contact" class="btn-primary inline-block px-10 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-50 transition-all duration-300 text-lg">
+                        Start Your Journey
+                    </a>
+                    <a href="#download" class="btn-secondary inline-block px-10 py-4 bg-transparent text-white border-2 border-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-all duration-300 text-lg">
+                        Download Free Guide
+                    </a>
                 </div>
-                <p class="cta-subtext">Download: "5 Signs Your Essay Sounds Like Everyone Else's"</p>
+                <p class="cta-subtext text-white/90 mb-8">Download: "5 Signs Your Essay Sounds Like Everyone Else's"</p>
                 <div class="contact-info">
-                    <p>Questions? Email us at <a href="mailto:hello@youlab.io">hello@youlab.io</a></p>
+                    <p class="text-white/90 text-base md:text-lg mb-0">
+                        Questions? Email us at <a href="mailto:hello@youlab.io" class="text-white underline font-semibold">hello@youlab.io</a>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">The You Lab</div>
-                <div class="footer-links">
-                    <a href="#privacy">Privacy Policy</a>
-                    <a href="#terms">Terms of Service</a>
-                    <a href="mailto:hello@youlab.io">Contact</a>
+    <footer class="footer bg-gray-900 py-12 text-white">
+        <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="footer-content flex flex-col md:flex-row justify-between items-center gap-8 flex-wrap">
+                <div class="footer-logo font-display text-2xl font-bold text-white">The You Lab</div>
+                <div class="footer-links flex flex-col md:flex-row gap-4 md:gap-8">
+                    <a href="#privacy" class="text-white/80 hover:text-white transition-colors duration-150">Privacy Policy</a>
+                    <a href="#terms" class="text-white/80 hover:text-white transition-colors duration-150">Terms of Service</a>
+                    <a href="mailto:hello@youlab.io" class="text-white/80 hover:text-white transition-colors duration-150">Contact</a>
                 </div>
                 <div class="footer-social">
-                    <p>&copy; 2025 The You Lab. All rights reserved.</p>
+                    <p class="text-white/60 text-sm mb-0">&copy; 2025 The You Lab. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

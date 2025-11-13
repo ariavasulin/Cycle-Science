@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The You Lab: An 8-week AI-powered college essay program combining science-backed self-discovery with expert coaching. Help students write authentic essays that stand out.">
+    <meta name="keywords" content="college essay coaching, authentic college essays, AI essay writing program, personalized college application help, college essay bootcamp, premium essay coaching">
+    <title>The You Lab - Your Story. Your Voice. Your Future.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">The You Lab</div>
+                <div class="nav-links">
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#cta" class="btn-nav">Reach Out</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Your Story.<br>Your Voice.<br>Your Future.</h1>
+                    <p class="hero-subhead">An 8-week program that combines AI-powered self-discovery with expert coaching and peer support to help students write authentic, compelling college essays that admissions officers actually remember.</p>
+                    <div class="hero-cta">
+                        <a href="#cta" class="btn-primary">Schedule Discovery Call</a>
+                        <p class="trust-indicator">Limited to 8 students per cohort</p>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="slideshow-container">
+                        <div class="slide fade">
+                            <img src="images/harvard.png" alt="Student celebrating Harvard acceptance">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/yale1.png" alt="Student celebrating Yale acceptance">
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/yale2.png" alt="Student with Yale acceptance">
+                        </div>
+                        
+                        <!-- Navigation dots -->
+                        <div class="slideshow-dots">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <div class="solution-grid">
+                <div class="solution-pillar">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" stroke="#6366F1" stroke-width="2"/>
+                            <path d="M32 12 L32 52 M12 32 L52 32" stroke="#6366F1" stroke-width="2"/>
+                            <circle cx="32" cy="22" r="4" fill="#6366F1"/>
+                            <circle cx="32" cy="42" r="4" fill="#8B5CF6"/>
+                            <circle cx="22" cy="32" r="4" fill="#EC4899"/>
+                            <circle cx="42" cy="32" r="4" fill="#10B981"/>
+                        </svg>
+                    </div>
+                    <h3>Science-Backed Personalization</h3>
+                    <ul>
+                        <li>Starts with validated personality assessments (Gallup StrengthsFinder)</li>
+                        <li>AI develops deep understanding of each student's unique voice</li>
+                        <li>Creates psychological profile that informs every interaction</li>
+                    </ul>
+                </div>
+                <div class="solution-pillar">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 54 L32 10 L54 54 Z" stroke="#6366F1" stroke-width="2" fill="none"/>
+                            <circle cx="32" cy="20" r="3" fill="#6366F1"/>
+                            <circle cx="25" cy="35" r="3" fill="#8B5CF6"/>
+                            <circle cx="39" cy="35" r="3" fill="#EC4899"/>
+                            <path d="M32 20 L25 35 M32 20 L39 35" stroke="#6366F1" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Structured Self-Discovery</h3>
+                    <ul>
+                        <li>Proprietary "journey" curriculum with expert-crafted prompts</li>
+                        <li>AI guides students through meaningful introspection</li>
+                        <li>Students discover their stories rather than being told what to write</li>
+                    </ul>
+                </div>
+                <div class="solution-pillar">
+                    <div class="pillar-icon">
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="24" r="8" stroke="#6366F1" stroke-width="2"/>
+                            <path d="M32 32 L32 44" stroke="#6366F1" stroke-width="2"/>
+                            <circle cx="20" cy="50" r="4" fill="#8B5CF6"/>
+                            <circle cx="32" cy="50" r="4" fill="#6366F1"/>
+                            <circle cx="44" cy="50" r="4" fill="#EC4899"/>
+                            <path d="M32 44 L20 50 M32 44 L44 50" stroke="#6366F1" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Expert Human Guidance</h3>
+                    <ul>
+                        <li>Small cohort (8 students) with dedicated essay coach</li>
+                        <li>Weekly group sessions for feedback and accountability</li>
+                        <li>Students learn from peers while maintaining individual voice</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="solution-quote">
+                <p>"Admissions officers can spot consultant-written essays from a mile away. What they can't ignore is genuine authenticity."</p>
+                <p class="quote-attribution">— Gina Lanette, UCLA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Bio Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Meet The Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-photo">
+                                <img src="images/Amelie.jpeg" alt="Amelie Martin">
+                            </div>
+                            <h3>Amelie Martin</h3>
+                            <p class="team-school">University of Chicago</p>
+                            <p class="team-bio">Amelie brings deep expertise in youth development and educational equity. As an analyst at BlackRock and former outreach director for WYSE, she understands both the business of education and the human side of mentorship. A passionate writer with a background in economics and gender studies, she ensures The You Lab balances rigor with authentic student voice.</p>
+                        </div>
+                        <div class="team-card-back">
+                            <h4>Writing Sample</h4>
+                            <div class="writing-sample">
+                                <p>"The most powerful essays don't announce their themes—they reveal them through specific moments. When a student writes 'I learned the importance of perseverance,' I ask them to show me the exact moment their hands trembled, the specific words that changed everything. That's where authentic voice lives: in the details only they could know."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-photo">
+                                <img src="images/ariav.jpg" alt="Ariav Asulin">
+                            </div>
+                            <h3>Ariav Asulin</h3>
+                            <p class="team-school">UC Berkeley</p>
+                            <p class="team-bio">Ariav is the technical architect behind The You Lab's AI platform and a passionate essay and admissions coach. A proud transfer student from Laney College, he understands firsthand the college application journey. As Technical Product Lead at Rescope, he's built systems that enhance rather than replace the writing process—because at heart, he's a writer who loves helping students find their stories.</p>
+                        </div>
+                        <div class="team-card-back">
+                            <h4>Writing Sample</h4>
+                            <div class="writing-sample">
+                                <p>"I used to think good writing meant using big words and complex sentences. Then I transferred from community college and realized: the best essays sound like you're talking to a friend who really gets you. Technology should help you find that voice, not create a new one. That's why I built our AI to ask questions, not write answers."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-inner">
+                        <div class="team-card-front">
+                            <div class="team-photo">
+                                <img src="images/genee.jpeg" alt="Genee Ramsay">
+                            </div>
+                            <h3>Genee Ramsay, MFT</h3>
+                            <p class="team-school">San Francisco State University</p>
+                            <p class="team-bio">Genee is a licensed marriage and family therapist and self-proclaimed AI skeptic who brings decades of experience helping people discover their authentic voices through writing. Her psychology-first approach keeps The You Lab grounded—ensuring technology serves genuine self-reflection, not shortcuts. Above all, she's a passionate advocate for the power of storytelling to transform lives.</p>
+                        </div>
+                        <div class="team-card-back">
+                            <h4>Writing Sample</h4>
+                            <div class="writing-sample">
+                                <p>"In thirty years of therapy, I've learned that people don't need someone to tell them who they are—they need someone to help them remember. Writing is the same. The story is already inside each student; our job is simply to create space for it to emerge. That's not something AI can do alone, but it's something AI can help us do better."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="how-it-works-title">8 Weeks. 3 Components. Transformational Results.</h2>
+
+            <!-- Week-by-Week Timeline -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1-2</div>
+                    <div class="timeline-content">
+                        <h3>Foundation</h3>
+                        <p>Personality assessment, voice discovery, core narrative</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3-5</div>
+                    <div class="timeline-content">
+                        <h3>Development</h3>
+                        <p>Drafting, peer feedback, refinement</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">6-8</div>
+                    <div class="timeline-content">
+                        <h3>Polish</h3>
+                        <p>Final essays, supplementals, cohesive package</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Three Components -->
+            <div class="components-grid">
+                <div class="component-card">
+                    <div class="component-number">1</div>
+                    <h3>Independent AI Work</h3>
+                    <p class="component-time">~1-2 hours/week</p>
+                    <ul>
+                        <li>Guided self-exploration sessions</li>
+                        <li>Hyper-personalized prompts based on your profile</li>
+                        <li>Draft development with real-time AI feedback</li>
+                    </ul>
+                </div>
+                <div class="component-card">
+                    <div class="component-number">2</div>
+                    <h3>Group Coaching Sessions</h3>
+                    <p class="component-time">90 mins/week</p>
+                    <ul>
+                        <li>Share progress with cohort of 8 peers</li>
+                        <li>Get expert feedback from experienced essay coach</li>
+                        <li>Learn from others' stories and approaches</li>
+                    </ul>
+                </div>
+                <div class="component-card">
+                    <div class="component-number">3</div>
+                    <h3>Resources & Support</h3>
+                    <p class="component-time">24/7 access</p>
+                    <ul>
+                        <li>AI writing companion always available</li>
+                        <li>Private cohort community</li>
+                        <li>Essay templates and frameworks</li>
+                        <li>Optional 1-on-1 coaching add-on</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+    <section class="what-you-get">
+        <div class="container">
+            <h2>More Than Essays.<br>A Portfolio of Self-Knowledge.</h2>
+            <div class="deliverables-grid">
+                <div class="deliverables-column">
+                    <h3>Deliverables</h3>
+                    <ul class="checkmark-list">
+                        <li>Complete Common App personal statement (650 words)</li>
+                        <li>3-5 supplemental essays (school-dependent)</li>
+                        <li>Cohesive narrative framework across all materials</li>
+                        <li>Comprehensive personality insights report</li>
+                        <li>Writing toolkit for future applications (scholarships, etc.)</li>
+                        <li>Peer network for ongoing support</li>
+                    </ul>
+                </div>
+                <div class="deliverables-column">
+                    <h3>Intangible Outcomes</h3>
+                    <ul class="outcome-list">
+                        <li>Authentic self-understanding</li>
+                        <li>Confidence in their own voice</li>
+                        <li>Skills that extend beyond college apps</li>
+                        <li>Stories they're proud to tell</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2>Investment Options</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3>Core Program</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">2,495</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>8-week cohort experience</li>
+                        <li>All components included</li>
+                        <li>Limited to 8 students per cohort</li>
+                        <li>Next cohort starts: <strong>January 2026</strong></li>
+                    </ul>
+                    <a href="#cta" class="btn-primary">Schedule Consultation</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Private Coaching</h3>
+                    <div class="price">
+                        <span class="currency">$</span>
+                        <span class="amount">200</span>
+                        <span class="period">/hour</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Additional 1-on-1 time</li>
+                        <li>Work directly with your group coach</li>
+                        <li>Perfect for supplemental essays</li>
+                        <li>Book as needed throughout program</li>
+                    </ul>
+                    <a href="#cta" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="value-comparison">
+                <p><strong>Value comparison:</strong> Traditional 1-on-1 essay consultants: $3,500-8,000. Generic group programs: $800-1,500. <span class="highlight">The You Lab: Premium personalization at group program efficiency.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <h2 class="trust-title">Built by Essay Experts. Powered by Cutting-Edge AI.</h2>
+            <div class="trust-content">
+                <div class="founder-section">
+                    <div class="founder-card">
+                        <div class="founder-avatar">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="48" fill="#6366F1"/>
+                                <circle cx="50" cy="40" r="15" fill="white"/>
+                                <path d="M25 85 Q50 65 75 85" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="founder-info">
+                            <h4>Expert-Designed Methodology</h4>
+                            <p>Our curriculum combines proven essay coaching techniques with breakthrough AI personalization, developed by experienced college admissions experts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-section">
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">The program helped my son find his authentic voice. His essays went from generic to genuinely compelling. More importantly, he grew as a person through the self-discovery process.</p>
+                        <p class="testimonial-author">— Parent of admitted student</p>
+                    </div>
+                </div>
+                <div class="sample-essay">
+                    <h4>Before & After</h4>
+                    <div class="essay-comparison">
+                        <div class="essay-before">
+                            <span class="label">Before</span>
+                            <p>"I have always been passionate about helping others. Throughout my life, I have volunteered at many organizations and learned valuable lessons about leadership..."</p>
+                        </div>
+                        <div class="arrow">→</div>
+                        <div class="essay-after">
+                            <span class="label">After</span>
+                            <p>"The woman's hands shook as I helped her fill out the asylum application. I didn't have a translator, so I drew pictures. That's when I realized communication isn't about perfect words..."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is this just AI writing my child's essays?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely not. The AI is a tool for self-discovery, not a ghostwriter. Students do all the writing themselves. The AI asks personalized questions, helps students reflect on their experiences, and provides feedback on their drafts. The student drives the entire process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How is this different from ChatGPT?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>ChatGPT is a general-purpose tool. Our AI is specifically trained on our proprietary curriculum, understands each student's personality profile, and follows a structured 8-week journey designed by essay experts. Plus, students get human coaching and peer feedback that ChatGPT can't provide.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if my student needs more help?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer 1-on-1 coaching sessions at $200/hour that can be booked as needed throughout the program. Students can work directly with their group coach for additional support on specific essays or challenges.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>When should we start?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The ideal time is junior spring or senior summer. This gives students enough time to complete the program before application deadlines while the college process is fresh in their minds.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What personality test do you use?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We use Gallup StrengthsFinder as our primary assessment, supplemented with proprietary components we've developed specifically for college essay writing. This combination gives us a comprehensive understanding of each student's unique voice and perspective.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How small are cohorts?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Maximum 8 students per cohort. This ensures everyone gets meaningful individual attention during group sessions while benefiting from diverse peer perspectives.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can parents attend sessions?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No - this is your student's journey. The cohort sessions are student-only to create a safe space for authentic sharing. However, we provide regular updates to parents on progress and milestones.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if my student misses a session?</span>
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All sessions are recorded and available within 24 hours. We also offer make-up options for students who need to miss sessions due to conflicts or emergencies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Your Student Has Stories Worth Telling.<br>Let's Help Them Tell It.</h2>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn-primary btn-large">Start Your Journey</a>
+                    <a href="#download" class="btn-secondary btn-large">Download Free Guide</a>
+                </div>
+                <p class="cta-subtext">Download: "5 Signs Your Essay Sounds Like Everyone Else's"</p>
+                <div class="contact-info">
+                    <p>Questions? Email us at <a href="mailto:hello@youlab.io">hello@youlab.io</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">The You Lab</div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="mailto:hello@youlab.io">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <p>&copy; 2025 The You Lab. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

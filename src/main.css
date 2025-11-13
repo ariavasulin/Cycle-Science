@@ -1,0 +1,173 @@
+/* Custom font imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-primary text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  /* Fade animation for slideshow */
+  .fade {
+    animation: fadeEffect 1s;
+  }
+
+  @keyframes fadeEffect {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Fade in up animation */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Mobile menu */
+  @media (max-width: 768px) {
+    .nav-links {
+      @apply fixed top-16 -right-full w-[70%] h-[calc(100vh-4rem)] bg-white flex-col items-start p-8 shadow-custom-xl transition-all duration-300 z-50;
+    }
+
+    .nav-links.active {
+      @apply right-0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .mobile-menu-toggle.active span:nth-child(2) {
+      @apply opacity-0;
+    }
+
+    .mobile-menu-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+  }
+
+  /* Slideshow active state */
+  .slide {
+    @apply hidden;
+  }
+
+  .slide.active {
+    @apply block;
+  }
+
+  .dot.active {
+    @apply bg-white scale-110;
+  }
+
+  /* FAQ active state */
+  .faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 500px;
+  }
+
+  /* Team card flip */
+  .team-card {
+    perspective: 1000px;
+  }
+
+  .team-card-inner {
+    @apply relative w-full h-full text-center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .team-card.flipped .team-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .team-card-front,
+  .team-card-back {
+    @apply absolute w-full h-full rounded-xl overflow-visible;
+    backface-visibility: hidden;
+  }
+
+  .team-card-back {
+    transform: rotateY(180deg);
+  }
+
+  /* Mobile team card flip - no 3D rotation */
+  @media (max-width: 768px) {
+    .team-card-front,
+    .team-card-back {
+      @apply static;
+      backface-visibility: visible;
+      transform: none !important;
+    }
+
+    .team-card-back {
+      @apply hidden;
+    }
+
+    .team-card.flipped .team-card-inner {
+      transform: none;
+    }
+
+    .team-card.flipped .team-card-front {
+      @apply hidden;
+    }
+
+    .team-card.flipped .team-card-back {
+      @apply flex;
+    }
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-dark;
+  }
+
+  /* Scroll to top button visible state */
+  .scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
