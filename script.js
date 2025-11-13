@@ -1,4 +1,53 @@
 // ===================================
+// Hero Slideshow
+// ===================================
+let slideIndex = 0;
+let slideTimer;
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (slides.length === 0) return;
+    
+    // Hide all slides
+    slides.forEach(slide => {
+        slide.classList.remove('active');
+    });
+    
+    // Remove active class from all dots
+    dots.forEach(dot => {
+        dot.classList.remove('active');
+    });
+    
+    // Increment slide index
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    
+    // Show current slide and activate corresponding dot
+    slides[slideIndex - 1].classList.add('active');
+    if (dots[slideIndex - 1]) {
+        dots[slideIndex - 1].classList.add('active');
+    }
+    
+    // Change slide every 4 seconds
+    slideTimer = setTimeout(showSlides, 4000);
+}
+
+function currentSlide(n) {
+    clearTimeout(slideTimer);
+    slideIndex = n - 1;
+    showSlides();
+}
+
+// Initialize slideshow when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    showSlides();
+});
+
+// ===================================
 // Mobile Menu Toggle
 // ===================================
 document.addEventListener('DOMContentLoaded', function() {
@@ -279,6 +328,40 @@ document.addEventListener('DOMContentLoaded', function() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
+        });
+    });
+});
+
+// ===================================
+// Team Card Flip on Click
+// ===================================
+document.addEventListener('DOMContentLoaded', function() {
+    const teamCards = document.querySelectorAll('.team-card');
+    
+    teamCards.forEach(card => {
+        card.addEventListener('click', function() {
+            // On mobile, lock the height before flipping to prevent resize
+            if (window.innerWidth <= 768) {
+                if (!this.classList.contains('flipped')) {
+                    // Capture current height before flipping to back
+                    const currentHeight = this.offsetHeight;
+                    this.style.height = currentHeight + 'px';
+                } else {
+                    // When flipping back to front, remove the locked height
+                    this.style.height = '';
+                }
+            }
+            
+            this.classList.toggle('flipped');
+        });
+    });
+
+    // Reset heights on window resize
+    window.addEventListener('resize', function() {
+        teamCards.forEach(card => {
+            if (window.innerWidth > 768) {
+                card.style.height = '';
+            }
         });
     });
 });

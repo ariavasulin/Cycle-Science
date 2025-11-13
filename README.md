@@ -1,6 +1,6 @@
-# YouLab Landing Page
+# The You Lab Landing Page
 
-A premium, responsive landing page for YouLab - an AI-native college essay program that helps students discover their authentic voice through science-backed personality insights and guided self-exploration.
+A premium, responsive landing page for The You Lab - an AI-native college essay program that helps students discover their authentic voice through science-backed personality insights and guided self-exploration.
 
 ## Overview
 
@@ -23,7 +23,7 @@ This landing page targets affluent parents (household income $200k+) of high sch
 
 1. **Hero Section**: Primary headline and value proposition
 2. **Problem Section**: Addresses common pain points in traditional essay coaching
-3. **Solution Section**: Three pillars of the YouLab approach
+3. **Solution Section**: Three pillars of The You Lab approach
 4. **How It Works**: 8-week program breakdown with timeline
 5. **What You Get**: Deliverables and intangible outcomes
 6. **Pricing**: Core program ($2,495) and add-on options
@@ -50,7 +50,7 @@ This landing page targets affluent parents (household income $200k+) of high sch
 
 **Core Value Prop**: "An 8-week program that combines AI-powered self-discovery with expert coaching to help students write authentic, compelling college essays that admissions officers actually remember."
 
-**Unique Positioning**: Unlike traditional consultants who write essays for students, YouLab puts students in the driver's seat - using AI to facilitate genuine self-authorship while expert coaches provide structure and accountability.
+**Unique Positioning**: Unlike traditional consultants who write essays for students, The You Lab puts students in the driver's seat - using AI to facilitate genuine self-authorship while expert coaches provide structure and accountability.
 
 ## Technical Details
 
@@ -104,4 +104,4 @@ For questions or modifications, contact: hello@youlab.io
 
 **Built with**: Modern web standards (HTML5, CSS3, ES6+ JavaScript)
 
-**License**: All rights reserved © 2025 YouLab
+**License**: All rights reserved © 2025 The You Lab

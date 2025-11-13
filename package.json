@@ -1,0 +1,20 @@
+{
+  "name": "cycle-science",
+  "version": "1.0.0",
+  "description": "The You Lab Landing Page - AI-native college essay program landing page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "open index.html",
+    "test": "echo \"No tests specified\""
+  },
+  "keywords": [
+    "landing-page",
+    "college-essay",
+    "youlab"
+  ],
+  "author": "The You Lab",
+  "license": "UNLICENSED",
+  "private": true
+}
+
