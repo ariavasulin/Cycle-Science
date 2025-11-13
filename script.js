@@ -53,11 +53,19 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navLinks = document.querySelector('.nav-links');
+    const body = document.body;
 
     if (mobileMenuToggle && navLinks) {
         mobileMenuToggle.addEventListener('click', function() {
-            this.classList.toggle('active');
+            const isActive = this.classList.toggle('active');
             navLinks.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (isActive) {
+                body.style.overflow = 'hidden';
+            } else {
+                body.style.overflow = '';
+            }
         });
 
         // Close mobile menu when clicking on a nav link
@@ -66,6 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', function() {
                 mobileMenuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
+                body.style.overflow = '';
             });
         });
 
@@ -77,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!isClickInsideNav && !isClickOnToggle && navLinks.classList.contains('active')) {
                 mobileMenuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
+                body.style.overflow = '';
             }
         });
     }
@@ -290,6 +300,8 @@ document.addEventListener('DOMContentLoaded', function() {
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
             z-index: 999;
+            touch-action: manipulation;
+            -webkit-tap-highlight-color: transparent;
         }
 
         .scroll-to-top.visible {
@@ -302,12 +314,27 @@ document.addEventListener('DOMContentLoaded', function() {
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
 
+        .scroll-to-top:active {
+            transform: scale(0.95);
+        }
+
         @media (max-width: 768px) {
             .scroll-to-top {
-                bottom: 1.5rem;
-                right: 1.5rem;
-                width: 2.5rem;
-                height: 2.5rem;
+                bottom: 1.25rem;
+                right: 1.25rem;
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.375rem;
+                box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .scroll-to-top {
+                bottom: 1rem;
+                right: 1rem;
+                width: 2.75rem;
+                height: 2.75rem;
                 font-size: 1.25rem;
             }
         }
