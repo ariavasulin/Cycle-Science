@@ -1,0 +1,202 @@
+/* Network Diagram Container */
+.network-diagram-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Header Section */
+.diagram-header {
+  padding: 2rem 2rem 1rem;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.diagram-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.diagram-header p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* Diagram Wrapper */
+.diagram-wrapper {
+  flex: 1;
+  position: relative;
+  margin: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  background: white;
+}
+
+/* React Flow Customization */
+.react-flow__node {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  padding: 16px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  white-space: pre-line;
+  line-height: 1.4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.react-flow__node:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Central Node (Your Story) */
+.react-flow__node.central-node {
+  background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+  color: white;
+  border: 3px solid #fff;
+  padding: 24px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  min-width: 160px;
+}
+
+.react-flow__node.central-node:hover {
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.4);
+}
+
+/* Input Nodes (Theory, Peer, Psych) */
+.react-flow__node.input-node {
+  background: white;
+  border: 2px solid #E5E7EB;
+  color: #1F2937;
+  min-width: 140px;
+}
+
+.react-flow__node.input-node:nth-of-type(2) {
+  border-color: #6366F1;
+}
+
+.react-flow__node.input-node:nth-of-type(3) {
+  border-color: #8B5CF6;
+}
+
+.react-flow__node.input-node:nth-of-type(4) {
+  border-color: #EC4899;
+}
+
+.react-flow__node.input-node:hover {
+  border-width: 3px;
+}
+
+/* Bottom Node (Curriculum) */
+.react-flow__node.bottom-node {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: white;
+  border: 2px solid #fff;
+  min-width: 140px;
+}
+
+.react-flow__node.bottom-node:hover {
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.4);
+}
+
+/* React Flow Controls */
+.react-flow__controls {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.react-flow__controls-button {
+  background: white;
+  border-bottom: 1px solid #E5E7EB;
+  transition: all 0.2s;
+}
+
+.react-flow__controls-button:hover {
+  background: #F9FAFB;
+}
+
+/* MiniMap */
+.react-flow__minimap {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .diagram-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .diagram-header p {
+    font-size: 0.95rem;
+  }
+
+  .diagram-wrapper {
+    margin: 0.5rem;
+  }
+
+  .react-flow__node {
+    font-size: 12px;
+    padding: 12px 16px;
+  }
+
+  .react-flow__node.central-node {
+    font-size: 15px;
+    padding: 18px 24px;
+  }
+
+  .react-flow__minimap {
+    display: none;
+  }
+}
+
+/* Animation for nodes appearing */
+@keyframes nodeAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.react-flow__node {
+  animation: nodeAppear 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Stagger animation for nodes */
+.react-flow__node:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.react-flow__node:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.react-flow__node:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.react-flow__node:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.react-flow__node:nth-child(5) {
+  animation-delay: 0.5s;
+}
